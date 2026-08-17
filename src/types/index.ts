@@ -120,3 +120,72 @@ export interface RecommendationReport {
     description: string;
   }[];
 }
+
+// 实时汇率接口
+export interface ExchangeRateData {
+  base: string; // 'HKD'
+  rates: {
+    CNY: number;
+    USD: number;
+    GBP: number;
+    EUR: number;
+    [key: string]: number;
+  };
+  lastUpdated: string;
+  isRealTime: boolean;
+}
+
+// 实时真实录取/拒信案例
+export interface OfferCase {
+  id: string;
+  applicantNickname: string;
+  undergradSchool: string;
+  schoolTier: SchoolTier;
+  undergradMajor: string;
+  gpa: string; // 如 "86.5/100" 或 "3.62/4.0"
+  languageScore: string; // 如 "雅思 7.0 (小分 6.5)" 或 "CET-6 530"
+  greGmat?: string; // 如 "GRE 325"
+  internshipResearch: string; // 如 "2段头部券商实习 + 1篇省创"
+  targetUniversityCode: string; // 如 "HKU"
+  targetUniversityName: string;
+  targetMajor: string; // 如 "金融学 MFin"
+  applicationRound: string; // 如 "Round 1 (早鸟轮)"
+  status: 'offer' | 'interview' | 'waiting' | 'rejection';
+  submissionDate: string;
+  decisionDate: string;
+  notes?: string;
+  likesCount: number;
+  isUserSubmitted?: boolean;
+}
+
+// 申请轮次与截止倒计时
+export interface ApplicationDeadline {
+  id: string;
+  universityCode: string;
+  universityName: string;
+  faculty: string;
+  majorName: string;
+  roundName: string;
+  deadlineDate: string; // ISO 格式 "2026-10-16T23:59:59+08:00"
+  isOfficialEstimated?: boolean;
+  portalUrl?: string;
+  notes?: string;
+}
+
+// 我的愿望单与申请进度管理
+export interface WishlistItem {
+  id: string;
+  universityId: string;
+  universityCode: string;
+  universityNameZh: string;
+  majorId: string;
+  majorNameZh: string;
+  majorNameEn: string;
+  faculty?: string;
+  tuitionHKD: string;
+  deadline?: string;
+  status: 'planning' | 'preparing_docs' | 'submitted' | 'interview' | 'offer' | 'rejected';
+  addedAt: string;
+  userNotes?: string;
+}
+

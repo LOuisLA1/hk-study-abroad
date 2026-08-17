@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { UniversityMatchResult } from '../types';
+import { addToWishlist } from '../services/dataSyncService';
 import { 
   Award, 
   MapPin, 
@@ -11,9 +12,10 @@ import {
   AlertCircle, 
   Lightbulb, 
   ChevronDown, 
-  ChevronUp,
-  Sparkles,
-  ExternalLink
+  ChevronUp, 
+  Sparkles, 
+  ExternalLink,
+  Bookmark
 } from 'lucide-react';
 
 interface CardProps {
@@ -23,6 +25,7 @@ interface CardProps {
 
 export const RecommendationCard: React.FC<CardProps> = ({ result, onSelectUniversity }) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
+  const [savedMajorId, setSavedMajorId] = useState<string | null>(null);
   const { university, tier, admissionChancePercentage, recommendedMajors, pros, risksOrChallenges, strategyAdvice } = result;
 
   // 根据不同梯队设置色彩与徽章
@@ -241,20 +244,46 @@ export const RecommendationCard: React.FC<CardProps> = ({ result, onSelectUniver
                   </div>
                 )}
 
-                {/* 官方项目主页与网申入口 */}
-                {major.officialUrl && (
-                  <div className="pt-1.5 flex justify-end">
+                {/* 官方项目主页与网申入口 & 加入愿望单 */}
+                <div className="pt-2 flex flex-wrap items-center justify-between gap-2 border-t border-slate-100">
+                  <button
+                    onClick={() => {
+                      addToWishlist({
+                        universityId: university.id,
+                        universityCode: university.code,
+                        universityNameZh: university.nameZh,
+                        majorId: major.id,
+                        majorNameZh: major.nameZh,
+                        majorNameEn: major.nameEn,
+                        faculty: major.faculty,
+                        tuitionHKD: major.tuitionHKD,
+                        status: 'planning'
+                      });
+                      setSavedMajorId(major.id);
+                      setTimeout(() => setSavedMajorId(null), 2000);
+                    }}
+                    className={`inline-flex items-center space-x-1 px-2.5 py-1.5 rounded-lg text-[11px] font-bold border transition-colors cursor-pointer ${
+                      savedMajorId === major.id
+                        ? 'bg-emerald-50 text-emerald-800 border-emerald-300'
+                        : 'bg-slate-50 hover:bg-amber-50 text-slate-700 hover:text-amber-900 border-slate-200'
+                    }`}
+                  >
+                    <Bookmark className={`w-3.5 h-3.5 ${savedMajorId === major.id ? 'fill-emerald-600 text-emerald-600' : 'text-slate-400'}`} />
+                    <span>{savedMajorId === major.id ? '已加愿望单 ✓' : '加入愿望单'}</span>
+                  </button>
+
+                  {major.officialUrl && (
                     <a
                       href={major.officialUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full sm:w-auto inline-flex items-center justify-center space-x-1.5 px-3 py-1.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-900 border border-amber-500/30 text-[11px] font-bold transition-colors text-center"
+                      className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-900 border border-amber-500/30 text-[11px] font-bold transition-colors text-center"
                     >
-                      <span>🔗 官方项目主页与网申简章</span>
+                      <span>🔗 官方网申简章</span>
                       <ExternalLink className="w-3 h-3 text-amber-700 flex-shrink-0" />
                     </a>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
             ))}
           </div>
