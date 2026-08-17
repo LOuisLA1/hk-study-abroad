@@ -240,6 +240,21 @@ export const RecommendationCard: React.FC<CardProps> = ({ result, onSelectUniver
                     {major.employmentProspects}
                   </div>
                 )}
+
+                {/* 官方项目主页与网申入口 */}
+                {major.officialUrl && (
+                  <div className="pt-1.5 flex justify-end">
+                    <a
+                      href={major.officialUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-900 border border-amber-500/30 text-[11px] font-bold transition-colors"
+                    >
+                      <span>🔗 查看官方项目主页与网申简章</span>
+                      <ExternalLink className="w-3 h-3 text-amber-700" />
+                    </a>
+                  </div>
+                )}
               </div>
             ))}
           </div>

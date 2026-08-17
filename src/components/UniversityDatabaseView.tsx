@@ -11,7 +11,8 @@ import {
   Search, 
   DollarSign, 
   Clock,
-  Filter
+  Filter,
+  ExternalLink
 } from 'lucide-react';
 
 export const UniversityDatabaseView: React.FC = () => {
@@ -230,6 +231,20 @@ export const UniversityDatabaseView: React.FC = () => {
                     {m.admissionRounds && (
                       <div className="text-[10px] text-slate-600 bg-white p-1.5 rounded border border-slate-200/70">
                         <strong className="text-amber-800">申请轮次：</strong>{m.admissionRounds}
+                      </div>
+                    )}
+
+                    {m.officialUrl && (
+                      <div className="pt-1 flex justify-end">
+                        <a
+                          href={m.officialUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center space-x-1 text-[11px] font-bold text-amber-800 hover:text-amber-950 bg-white hover:bg-amber-50 px-2.5 py-1 rounded border border-slate-200 shadow-2xs transition-colors"
+                        >
+                          <span>🔗 官方项目主页与网申简章</span>
+                          <ExternalLink className="w-3 h-3 text-amber-600" />
+                        </a>
                       </div>
                     )}
                   </div>

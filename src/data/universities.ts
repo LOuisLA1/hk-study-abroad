@@ -14,6 +14,7 @@ export const HK_UNIVERSITIES: University[] = [
     qsRank2025: 17,
     timesRank2024: 35,
     location: '香港岛薄扶林道',
+    websiteUrl: 'https://admissions.hku.hk/tpg/',
     badgeBgColor: 'bg-emerald-800',
     accentColor: '#065f46',
     features: ['QS世界大学排名第17位', '香港历史最悠久高等学府', '商学院/医学院/法学院极负盛名', '全英文国际化教学'],
@@ -34,7 +35,6 @@ export const HK_UNIVERSITIES: University[] = [
     },
     acceptanceTips: '港大是港校申请天花板，商科、计算机与法学极度偏好985/211高GPA（85+），双非学生建议均分90+且有突出大厂实习/科研。注意全校严格不接受CET-6或考研英语。',
     majors: [
-      // 商学院
       {
         id: 'hku_fin',
         nameZh: '金融学硕士 (Master of Finance)',
@@ -46,6 +46,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 7.0 (小分 6.5) / 托福 90 (强烈建议 GMAT/GRE 700+)',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 10月中旬 / Round 2: 12月上旬 / Round 3: 次年1月下旬',
+        officialUrl: 'https://www.hkubs.hku.hk/programmes/master-programmes/master-of-finance/',
         curriculumHighlights: ['公司金融与投资银行', '量化金融与金融工程', '资产管理与对冲基金', '风险管理'],
         employmentProspects: '外资投行(大摩/高盛)、中资头部券商(中金/中信)、公募与私募基金、央国企财务投资部'
       },
@@ -60,6 +61,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 7.0 (小分 6.0) / 托福 90',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 10月中旬 / Round 2: 12月上旬 / Round 3: 次年1月下旬',
+        officialUrl: 'https://www.hkubs.hku.hk/programmes/master-programmes/master-of-science-in-business-analytics/',
         curriculumHighlights: ['商业大数据挖掘与决策', '机器学习在商业中的应用', '量化营销与用户增长', '供应链智能优化'],
         employmentProspects: '战略咨询公司(MBB)、互联网大厂商业分析师、数字化转型顾问、金融科技风控'
       },
@@ -74,6 +76,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 7.0 / 托福 90',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 10月中旬 / Round 2: 12月上旬',
+        officialUrl: 'https://www.hkubs.hku.hk/programmes/master-programmes/master-of-science-in-financial-technology/',
         curriculumHighlights: ['区块链与数字货币', '金融大数据分布式计算', '算法交易与智能投顾', '金融网络安全'],
         employmentProspects: '持牌虚拟银行、区块链机构、量化对冲基金、交易所与科技金融巨头'
       },
@@ -88,6 +91,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 7.0 (单科 6.5) / 托福 90',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 10月中旬 / Round 2: 12月上旬',
+        officialUrl: 'https://www.hkubs.hku.hk/programmes/master-programmes/master-of-economics/',
         curriculumHighlights: ['高级微观与宏观经济学', '微观计量经济学', '大数据经济分析', '政策与产业经济学'],
         employmentProspects: '央行及金融监管部门、券商宏观与行业研究员、政策研究智库、大型跨国企业'
       },
@@ -102,10 +106,10 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 7.0 / 托福 90',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 10月中旬 / Round 2: 12月上旬',
+        officialUrl: 'https://www.hkubs.hku.hk/programmes/master-programmes/master-of-science-in-marketing/',
         curriculumHighlights: ['数字营销战略与社交媒体', '消费者神经心理洞察', '奢侈品与全球品牌管理', '数据驱动营销分析'],
         employmentProspects: '顶级快消巨头(宝洁/欧莱雅)、奢侈品集团、互联网大厂市场与运营增长'
       },
-      // 工程学院与计算机
       {
         id: 'hku_cs',
         nameZh: '计算机科学理学硕士 (MSc in Computer Science)',
@@ -117,6 +121,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 (小分 6.0) / 托福 80',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 10月下旬 / Round 2: 12月下旬 / Round 3: 次年2月',
+        officialUrl: 'https://www.msc-cs.hku.hk/',
         curriculumHighlights: ['人工智能方向 (AI Stream)', '信息安全与密码学 (Cyber Security Stream)', '金融计算方向 (Financial Computing Stream)', '通用多媒体流'],
         employmentProspects: '头部科技大厂(腾讯/阿里/字节/Google)、量化私募开发、独角兽算法工程师'
       },
@@ -131,6 +136,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 (单科 6.0) / 托福 80',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 11月中旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://saas.hku.hk/current/mdasc/',
         curriculumHighlights: ['统计推断与大数据挖掘', '深度学习与大规模分布式计算', '数据可视化与云架构', '统计机器学习实务'],
         employmentProspects: '算法科学家、数据架构师、量化研究员、AI医疗与智能交通研发'
       },
@@ -145,6 +151,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 (单科 6.0) / 托福 80',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 10月下旬 / Round 2: 12月下旬',
+        officialUrl: 'https://www.eee.hku.hk/prospective-students/msc/',
         curriculumHighlights: ['集成电路系统与VLSI设计', '下一代无线通信与6G', '电力电子与智能电网', '嵌入式系统'],
         employmentProspects: '半导体芯片公司(华为海思/台积电)、国家电网、通信设备巨头、自动驾驶感知研发'
       },
@@ -159,10 +166,10 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 (单科 6.0) / 托福 80',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 10月下旬 / Round 2: 12月下旬',
+        officialUrl: 'https://mech.hku.hk/study/postgraduate-taught/msc-eng-me/',
         curriculumHighlights: ['机器人运动学与自主导航', '微机电系统 (MEMS)', '先进结构力学与CFD流体仿真', '增材制造与3D打印'],
         employmentProspects: '大疆创新、新能源汽车(比亚迪/特斯拉)、工业自动化与机器人高新技术企业'
       },
-      // 文学与传媒
       {
         id: 'hku_journalism',
         nameZh: '新闻学硕士 (Master of Journalism)',
@@ -174,6 +181,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 7.0 (单科不低于 6.0) / 托福 95',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://jmsc.hku.hk/master-of-journalism/',
         curriculumHighlights: ['深度调查报道与特稿写作', '数字数据新闻可视化', '全媒体短视频叙事', '国际新闻报道法与伦理'],
         employmentProspects: '国际主流通讯社(彭博/路透/CNN)、权威财经媒体、跨国公关与企业外联部'
       },
@@ -188,10 +196,10 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 7.0 (写作不低于 7.0, 其他不低于 6.0) / 托福 95',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 11月中旬 / Round 2: 次年2月上旬',
+        officialUrl: 'https://caes.hku.hk/ma-applied-linguistics/',
         curriculumHighlights: ['语料库语言学', '学术二语写作与评估', '社会语言学与话语分析', '第二语言习得理论'],
         employmentProspects: '高校及国际学校英语名师、教育出版集团、语言本地化专家'
       },
-      // 法学与社科
       {
         id: 'hku_llm',
         nameZh: '法学硕士 (Master of Laws)',
@@ -203,10 +211,10 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 7.0 (单科不低于 6.5) / 托福 97',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 12月上旬 / Round 2: 次年2月下旬',
+        officialUrl: 'https://www.law.hku.hk/academic-programmes/postgraduate-programmes/master-of-laws/',
         curriculumHighlights: ['国际经济法与商法', '跨境金融监管', '知识产权与科技法', '国际仲裁与争端解决'],
         employmentProspects: '红圈所与外资律所(Magic Circle)、跨国公司法务部、金融机构合规部'
       },
-      // 建筑
       {
         id: 'hku_real_estate',
         nameZh: '房地产理学硕士 (MSc in Real Estate)',
@@ -218,6 +226,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 80',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.arch.hku.hk/programmes/rec/master-of-science-in-real-estate/',
         curriculumHighlights: ['房地产金融与投资信托 (REITs)', '城市土地经济学与土地利用', '大型项目资产评估与运营', '建筑法律与物业管理'],
         employmentProspects: '五大行(世邦魏理仕/仲量联行等)、大型地产基金、商业地产投资运营'
       }
@@ -237,6 +246,7 @@ export const HK_UNIVERSITIES: University[] = [
     qsRank2025: 47,
     timesRank2024: 64,
     location: '九龙清水湾半岛',
+    websiteUrl: 'https://fytgs.hkust.edu.hk/admissions/tpg/',
     badgeBgColor: 'bg-blue-900',
     accentColor: '#1e3a8a',
     features: ['QS世界大学排名第47位', '亚洲理工与商科执牛耳者', '大疆创新等全球独角兽发源地', '清水湾无敌海景校园'],
@@ -252,8 +262,8 @@ export const HK_UNIVERSITIES: University[] = [
     },
     languageAcceptance: {
       acceptsCET6: false,
-      ieltsMin: 6.5, // 部分小分 5.5，商科建议 7.0+
-      toeflMin: 80,  // 商科建议 100+
+      ieltsMin: 6.5,
+      toeflMin: 80,
     },
     acceptanceTips: '港科大工学院与理学院是全港理工风向标，极度看重专业课程匹配度与数学/编程功底；商学院项目面试淘汰率较高，需提前准备行为面与专业技术题。严禁六级申请。',
     majors: [
@@ -268,6 +278,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 (单科 5.5) / 托福 80',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 10月下旬 / Round 2: 12月中旬 / Round 3: 次年2月',
+        officialUrl: 'https://bdt.hkust.edu.hk/',
         curriculumHighlights: ['大数据系统与分布式计算架构', '大规模数据挖掘与知识发现', '并行与深度神经网络', '图计算与自然语言处理'],
         employmentProspects: '大厂核心基础架构部门、大数据科学家、算法研发、自动驾驶感知开发'
       },
@@ -282,6 +293,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 (单科 5.5) / 托福 80',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 10月下旬 / Round 2: 12月中旬',
+        officialUrl: 'https://msit.cse.ust.hk/',
         curriculumHighlights: ['高级网络体系与云计算', '软件架构设计与敏捷工程', '人机交互与视觉计算', '密码学与隐私保护'],
         employmentProspects: '全栈软件开发工程师、系统架构师、移动应用与云原生开发'
       },
@@ -296,6 +308,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 (单科 5.5) / 托福 80',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 10月下旬 / Round 2: 12月中旬',
+        officialUrl: 'https://msai.hkust.edu.hk/',
         curriculumHighlights: ['大语言模型 (LLM) 与智能体系统', '计算机视觉与模式识别', '强化学习与机器人智能控制', 'AI系统芯片协同设计'],
         employmentProspects: '生成式AI研发、具身智能机器人公司、自动驾驶算法中台、顶尖科研机构'
       },
@@ -310,6 +323,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 (建议 7.0+) / 托福 80 (建议 100+) / 强推 GMAT/GRE',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 10月中旬 / Round 2: 12月上旬 / Round 3: 次年1月下旬',
+        officialUrl: 'https://mscfin.hkust.edu.hk/',
         curriculumHighlights: ['投资分析与现代资产定价', '公司金融战略与杠杆收购 (LBO)', '衍生品证券与量化交易模型', '金融科技与高频做市'],
         employmentProspects: '中外资顶级投行、PE/VC私募股权基金、量化对冲基金交易员、头部保险资管'
       },
@@ -324,6 +338,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 (建议 7.0) / 托福 80 (建议 100+)',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 10月中旬 / Round 2: 12月上旬',
+        officialUrl: 'https://mscba.hkust.edu.hk/',
         curriculumHighlights: ['商务统计分析与预测建模', '优化决策与运筹学', '社交媒体分析与网络经济', '商业大数据可视化'],
         employmentProspects: '管理咨询顾问、大厂商业化分析专家、电商与零售大数据总监'
       },
@@ -338,6 +353,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 80',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 10月中旬 / Round 2: 12月上旬',
+        officialUrl: 'https://mscism.hkust.edu.hk/',
         curriculumHighlights: ['企业IT战略与数字化领导力', '项目管理与商业智能系统', '电子商务与金融科技生态', '网络安全法与合规'],
         employmentProspects: 'IT项目总监、数字化转型顾问、金融科技产品经理、ERP系统实施'
       },
@@ -352,6 +368,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 (小分 5.5) / 托福 80',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://mafs.math.ust.hk/',
         curriculumHighlights: ['随机微积分在金融中的应用', '量化风险模型与压力测试', '蒙特卡洛金融仿真', '固定收益证券量化定价'],
         employmentProspects: '量化策略研究员 (Quant Researcher)、风险量化建模师、衍生品定价师'
       },
@@ -366,6 +383,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 (小分 5.5) / 托福 80',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://mscme.hkust.edu.hk/',
         curriculumHighlights: ['精密工程与先进制造系统', '微机电系统与传感器', '空气动力学与热能系统', '机器人控制算法'],
         employmentProspects: '智能硬件研发、无人机/机器人企业、汽车电子与航天工程'
       },
@@ -380,6 +398,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 7.0 (单科 5.5) / 托福 100',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://shss.hkust.edu.hk/tpg/gcs/',
         curriculumHighlights: ['全球化背景下的中国政治与经济', '历史与当代中国社会变迁', '跨国环境与可持续发展政策', '学术调研方法'],
         employmentProspects: '跨国组织与NGO、政府外事与发展研究部门、国际传播媒体、高校智库'
       }
@@ -399,6 +418,7 @@ export const HK_UNIVERSITIES: University[] = [
     qsRank2025: 36,
     timesRank2024: 53,
     location: '新界沙田马料水',
+    websiteUrl: 'https://www.gs.cuhk.edu.hk/admissions/programme/',
     badgeBgColor: 'bg-purple-900',
     accentColor: '#581c87',
     features: ['QS世界大学排名第36位', '全港面积最大山海书院制大学', '文理商工医全学科殿堂级实力', '社科与传播学亚洲领头羊'],
@@ -430,6 +450,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 (建议 7.0+) / 托福 79 (建议 100+) / 必须提交 GMAT/GRE',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 10月中旬 / Round 2: 11月下旬 / Round 3: 次年1月中旬',
+        officialUrl: 'https://masters.bschool.cuhk.edu.hk/programmes/msc-in-finance/',
         curriculumHighlights: ['公司金融高级专题', '量化风险管理与衍生证券', '金融科技投资策略', '投资银行与兼并重组'],
         employmentProspects: '中金、中信、中信建投等头部券商投行部 (IBD)、外资商业银行管培生、买方公募基金'
       },
@@ -444,6 +465,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 79 / 必须提交 GMAT/GRE',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 10月中旬 / Round 2: 11月下旬',
+        officialUrl: 'https://masters.bschool.cuhk.edu.hk/programmes/msc-in-business-analytics/',
         curriculumHighlights: ['商业数据分析与统计计算', '决策模型与风险分析', '数据库与人工智能商业管理', '商业预测与优化'],
         employmentProspects: '顶级咨询公司商业分析顾问、大厂战略与数据分析师、金融量化中台'
       },
@@ -458,6 +480,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 79 (强烈建议 GMAT/GRE)',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 10月中旬 / Round 2: 11月下旬',
+        officialUrl: 'https://masters.bschool.cuhk.edu.hk/programmes/msc-in-marketing/',
         curriculumHighlights: ['大数据营销工程', '品牌战略与整合营销传播', '数字化消费者心理洞察', '服务创新与零售分析'],
         employmentProspects: '头部快消品牌管培生、互联网品牌公关与增长负责人、广告创意与传媒策划'
       },
@@ -472,6 +495,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 79',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 10月下旬 / Round 2: 12月下旬 / Round 3: 次年2月中旬',
+        officialUrl: 'https://www.cse.cuhk.edu.hk/postgraduate/msc-in-computer-science/',
         curriculumHighlights: ['高级算法理论与复杂性分析', '深度学习与计算机视觉', '密码学、区块链与信息安全', '智能系统与知识图谱'],
         employmentProspects: '算法工程师、后端与分布式开发工程师、AI与数据系统科学家'
       },
@@ -486,6 +510,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 79',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 10月下旬 / Round 2: 12月下旬',
+        officialUrl: 'https://www.ie.cuhk.edu.hk/academic-programmes/postgraduate-programmes/msc-in-information-engineering/',
         curriculumHighlights: ['多媒体编码与流媒体分发', '无线网络与物联网协议', '网络虚拟化与云计算', '机器学习与信号处理'],
         employmentProspects: '通信巨头(华为/中兴)、互联网网络工程、多媒体与流媒体技术开发'
       },
@@ -500,6 +525,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 79',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 10月下旬 / Round 2: 12月下旬',
+        officialUrl: 'https://ftmsc.erg.cuhk.edu.hk/',
         curriculumHighlights: ['金融计算与智能合约开发', '大数据风控模型', '加密经济学与去中心化金融 (DeFi)', '算法交易技术'],
         employmentProspects: '香港金管局持牌机构、投行科技部、量化私募开发、区块链创新金融实验室'
       },
@@ -514,6 +540,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 79',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.com.cuhk.edu.hk/programmes/master-of-science-in-new-media/',
         curriculumHighlights: ['新媒体内容创意生产与运营', '数字传播理论与网络文化', '人机交互设计 (UI/UX)', '媒体数据挖掘与舆情分析'],
         employmentProspects: '互联网大厂内容运营、短视频平台产品与运营、跨国公关与品牌咨询'
       },
@@ -528,6 +555,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 7.0 / 托福 92',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.com.cuhk.edu.hk/programmes/master-of-arts-in-global-communication/',
         curriculumHighlights: ['全球化与媒介政治经济学', '跨文化传播战略', '国际新闻报道实务', '全球公关与危机公关应对'],
         employmentProspects: '联合国与跨国国际组织、国际新闻通讯社、跨国科技企业出海公共关系'
       },
@@ -542,6 +570,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 79',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 10月中旬 / Round 2: 12月上旬',
+        officialUrl: 'https://www.econ.cuhk.edu.hk/dept/msc/',
         curriculumHighlights: ['高级微观经济理论', '高级宏观经济学', '应用计量经济学与面板数据', '金融经济学'],
         employmentProspects: '券商研究所行研/宏观分析师、银行总行研究部、宏观政策智库、攻读博士前置'
       },
@@ -556,6 +585,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 88',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月中旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.law.cuhk.edu.hk/app/programmes/master-of-laws-in-chinese-business-law/',
         curriculumHighlights: ['中国公司与证券法律制度', '跨境合资与外商直接投资法', '中国知识产权实务', '商业争议解决机制'],
         employmentProspects: '中资头部红圈律所涉外业务部、港资/外资企业驻华法务、跨境商事仲裁机构'
       }
@@ -575,6 +605,7 @@ export const HK_UNIVERSITIES: University[] = [
     qsRank2025: 57,
     timesRank2024: 87,
     location: '九龙红磡核心枢纽',
+    websiteUrl: 'https://www.polyu.edu.hk/study/pg/tpg/',
     badgeBgColor: 'bg-red-800',
     accentColor: '#991b1b',
     features: ['QS世界大学排名第57位', '酒店管理与旅游学科全球前列', '设计学/土木工程/计算机业界口碑极高', '以极高就业导向著称'],
@@ -606,6 +637,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.0 / 托福 80',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月中旬 / Round 3: 次年3月',
+        officialUrl: 'https://www.polyu.edu.hk/comp/study/taught-postgraduate-programmes/msc-in-information-technology/',
         curriculumHighlights: ['软件开发与架构管理', '互联网与云计算体系', '智能系统算法与数据挖掘', '移动智能计算'],
         employmentProspects: '互联网大厂软件工程师、金融机构科技开发部、IT系统集成顾问'
       },
@@ -620,6 +652,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.0 / 托福 80',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月中旬',
+        officialUrl: 'https://www.polyu.edu.hk/comp/study/taught-postgraduate-programmes/msc-in-artificial-intelligence-and-big-data-computing/',
         curriculumHighlights: ['深度学习与大模型工程', '大规模分布式数据处理', '自然语言处理与多模态AI', '大数据隐私安全'],
         employmentProspects: 'AI大模型工程师、数据挖掘专家、智慧金融与智能物联网架构师'
       },
@@ -634,6 +667,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 86 (有酒店/旅游实习经历优先)',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 10月下旬 / Round 2: 12月下旬',
+        officialUrl: 'https://www.polyu.edu.hk/shtm/study/postgraduate-programmes/msc-in-international-hospitality-management/',
         curriculumHighlights: ['全球酒店战略领导力', '奢华品牌服务创新管理', '旅游与酒店资产收益管理', '唯港荟 (Hotel ICON) 专属实操'],
         employmentProspects: '万豪/洲际/希尔顿等奢华酒店高管、文旅集团投资运营、免税集团与高端零售管理'
       },
@@ -648,6 +682,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 80',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 10月下旬 / Round 2: 12月下旬',
+        officialUrl: 'https://www.polyu.edu.hk/af/study/tpg/mof/',
         curriculumHighlights: ['证券投资分析与量化建模', '企业财务报表深度分析', '金融衍生工具与风险控制', '金融科技在财富管理中的应用'],
         employmentProspects: '券商分析师、商业银行财富管理与信贷部、私募基金投资助理'
       },
@@ -662,6 +697,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.0 / 托福 80',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.polyu.edu.hk/lms/study/tpg/gscm/',
         curriculumHighlights: ['全球智能物流与供应链协同', '采购战略与库存控制理论', '航运与港口物流运营', '供应链大数据优化'],
         employmentProspects: '跨国供应链集团(马士基/DHL)、跨境电商物流总监、苹果/华为全球供应链运营'
       },
@@ -676,6 +712,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 (必须提交高质量作品集 Portfolio 与个人陈述)',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 11月中旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.sd.polyu.edu.hk/en/education/master-of-design',
         curriculumHighlights: ['智能系统设计 (Intelligent Systems Design)', '创新商业设计 (Innovative Business Design)', '智能服务设计 (Smart Service Design)', '城市过渡环境设计'],
         employmentProspects: '科技巨头高级UI/UX设计师、工业产品设计总监、设计策略咨询公司合伙人'
       },
@@ -690,6 +727,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.0 / 托福 80',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年2月上旬',
+        officialUrl: 'https://www.polyu.edu.hk/cee/prospective-students/taught-postgraduate-programmes/msc-in-civil-engineering/',
         curriculumHighlights: ['高层与大跨度结构工程', '智能建造与数字孪生BIM', '岩土与深基坑工程', '可持续桥梁与隧道维护'],
         employmentProspects: '大型工程设计院(如中建、中铁、奥雅纳)、香港特区政府土木工程署、房地产工程部'
       },
@@ -704,6 +742,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 7.0 (阅读/写作不低于 6.5, 听力/口语不低于 6.0) / 托福 96',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.polyu.edu.hk/cbs/study/taught-postgraduate-programmes/mati/',
         curriculumHighlights: ['同声传译与交替传译实务', '商业法律财经翻译精要', '机器翻译与本地化技术 (CAT)', '跨文化公共传播'],
         employmentProspects: '国际会议同声传译员、大型跨国企业高管专属翻译、官方外事翻译机构'
       }
@@ -723,6 +762,7 @@ export const HK_UNIVERSITIES: University[] = [
     qsRank2025: 62,
     timesRank2024: 82,
     location: '九龙塘达之路',
+    websiteUrl: 'https://www.cityu.edu.hk/pg/taught-postgraduate-programmes',
     badgeBgColor: 'bg-amber-700',
     accentColor: '#b45309',
     features: ['QS世界大学排名第62位', '九龙塘核心交通枢纽', '商学院获AACSB/EQUIS双重国际认证', '工学/理学/社科部分专业认可六级'],
@@ -738,7 +778,7 @@ export const HK_UNIVERSITIES: University[] = [
     },
     languageAcceptance: {
       acceptsCET6: true,
-      cet6MinScore: 450, // 大多数支持CET6的专业要求450-490分
+      cet6MinScore: 450,
       ieltsMin: 6.5,
       toeflMin: 79,
     },
@@ -755,6 +795,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / CET-6 450分 / 托福 79',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 11月中旬 / Round 2: 次年1月下旬 / 最终轮: 次年3月',
+        officialUrl: 'https://www.cityu.edu.hk/sdsc/programmes/msc-data-science',
         curriculumHighlights: ['统计机器学习理论', '海量数据流优化算法', '自然语言处理与大语言模型', '金融大数据分析'],
         employmentProspects: '算法工程师、商业智能 (BI) 专家、互联网数据挖掘与用户画像'
       },
@@ -769,6 +810,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / CET-6 450分 / 托福 79',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 11月中旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.cs.cityu.edu.hk/programmes/taught-postgraduate-programmes/msc-computer-science',
         curriculumHighlights: ['信息安全与隐私计算', '云计算与分布式应用', '软件工程架构与度量', '模式识别与图像处理'],
         employmentProspects: '一线大厂研发工程师、金融IT架构师、网络安全专家'
       },
@@ -783,6 +825,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / CET-6 450分 / 托福 79 (分金融科技与商务管理两流)',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 11月中旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.cb.cityu.edu.hk/is/programmes/postgraduate/mscbis/',
         curriculumHighlights: ['企业IT战略规划', '金融科技商业应用', 'ERP系统实施与咨询', '商务智能与知识管理'],
         employmentProspects: '普华永道/德勤等四大管理咨询师、金融科技产品经理、数字化运营总监'
       },
@@ -797,6 +840,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 79 (商学院项目不接受六级)',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 10月下旬 / Round 2: 12月中旬',
+        officialUrl: 'https://www.cb.cityu.edu.hk/ef/programmes/postgraduate/mscf/',
         curriculumHighlights: ['企业融资与并购', '固定收益证券与利率建模', '金融计量经济学', '国际投资组合管理'],
         employmentProspects: '商业银行总行管培生、券商投行部与研究所、资产管理机构'
       },
@@ -811,6 +855,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / CET-6 450分 / 托福 79',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 11月中旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.cityu.edu.hk/com/programmes/postgraduate/macnm',
         curriculumHighlights: ['新媒体内容制作与分发', '数字传播研究方法', '新媒体受众心理与社交网络', '计算广告实操'],
         employmentProspects: '新媒体运营总监、品牌公关策划、数字营销公司创意总监'
       },
@@ -825,6 +870,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / CET-6 500分 / 需提交作品集 (Portfolio)',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 12月上旬 / Round 2: 次年2月下旬',
+        officialUrl: 'https://www.scm.cityu.edu.hk/programmes/postgraduate/mfa-creative-media',
         curriculumHighlights: ['沉浸式交互媒体艺术', '三维电脑动画与特效制作', '生成式AI艺术与空间叙事', '独立游戏与声音设计'],
         employmentProspects: '知名游戏公司原画/特效师、数字艺术策展人、影视特效总监、跨媒体创意工作室'
       },
@@ -839,6 +885,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / CET-6 450分 / 托福 79',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月中旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.cityu.edu.hk/pia/programmes/postgraduate/ma-public-policy-and-management',
         curriculumHighlights: ['公共政策分析与量化评估', '非营利组织战略管理', '大湾区城市治理与可持续发展', '公共预算与绩效审计'],
         employmentProspects: '公务员与事业单位、政策智库研究员、跨国NGO项目负责人'
       }
@@ -858,6 +905,7 @@ export const HK_UNIVERSITIES: University[] = [
     qsRank2025: 252,
     timesRank2024: 301,
     location: '九龙塘窝打老道',
+    websiteUrl: 'https://gs.hkbu.edu.hk/programmes',
     badgeBgColor: 'bg-cyan-800',
     accentColor: '#155e75',
     features: ['QS世界大学排名第252位', '传理学院全亚洲第一 (传媒界黄埔军校)', '中医药与全人教育国际领先', '双非友好，部分专业认可六级'],
@@ -873,7 +921,7 @@ export const HK_UNIVERSITIES: University[] = [
     },
     languageAcceptance: {
       acceptsCET6: true,
-      cet6MinScore: 450, // 传理学院部分专业要求 480分
+      cet6MinScore: 450,
       ieltsMin: 6.0,
       toeflMin: 79,
     },
@@ -890,6 +938,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 (单科 6.0) / CET-6 480分',
         competitivenessLevel: 'extreme',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月中旬',
+        officialUrl: 'https://comm.hkbu.edu.hk/taught-postgraduate-programmes/ma-in-communication/',
         curriculumHighlights: ['媒介研究与传播战略', '新时代公关战役策划', '跨文化与全球传播实操', '数字媒体法规与伦理'],
         employmentProspects: '头部传媒集团总监、大型互联网企业公关总监 (PRD)、国际公关顾问'
       },
@@ -904,6 +953,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 79 / 需提交个人影视作品集或剧本大纲',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 11月中旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://af.hkbu.edu.hk/programmes/mfa-in-producing-for-film-television-and-new-media',
         curriculumHighlights: ['电影投资与国际制片流程', '影视项目投融资与发行管理', '影视IP开发与剧本创作实操', '新媒体视听内容工业化'],
         employmentProspects: '院线电影独立制片人、影视娱乐公司版权运营总监、网剧/流媒体内容监制'
       },
@@ -918,6 +968,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.0 / CET-6 450分 / 托福 74',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://aidm.comm.hkbu.edu.hk/',
         curriculumHighlights: ['AIGC 在多媒体内容生产中的应用', '媒体大数据挖掘与情感计算', '计算广告与社交网络传播分析', '智能新闻采编技术'],
         employmentProspects: '算法推荐工程师、AIGC产品经理、智慧媒体与数据新闻总监'
       },
@@ -932,6 +983,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / 托福 79',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://mscaaf.hkbu.edu.hk/',
         curriculumHighlights: ['国际财务报表深度分析', '法务会计与公司治理合规', '金融市场监管与衍生品交易', '战略财务管理决策'],
         employmentProspects: '会计师事务所审计总监、金融机构财务分析师、上市公司董秘与财务总监'
       },
@@ -946,6 +998,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.0 / CET-6 450分 / 托福 74',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.comp.hkbu.edu.hk/v1/?page=msc_itm',
         curriculumHighlights: ['企业信息系统架构治理', 'IT项目敏捷管理与交付', '商业智能与大数据应用', '信息安全策略与合规'],
         employmentProspects: 'IT项目经理 (PMP)、系统架构师、企业数字化运营经理'
       }
@@ -965,6 +1018,7 @@ export const HK_UNIVERSITIES: University[] = [
     qsRank2025: 640,
     timesRank2024: 401,
     location: '新界屯门青山公路',
+    websiteUrl: 'https://www.ln.edu.hk/taught-postgraduate/',
     badgeBgColor: 'bg-rose-900',
     accentColor: '#881337',
     features: ['亚洲博雅大学先驱 (Liberal Arts)', '全人小班精英互动教学', '经济学与人文社科卓越', '国际交换与大湾区产业合作丰富'],
@@ -981,7 +1035,7 @@ export const HK_UNIVERSITIES: University[] = [
     languageAcceptance: {
       acceptsCET6: true,
       cet6MinScore: 450,
-      ieltsMin: 6.0, // 部分项目 6.5
+      ieltsMin: 6.0,
       toeflMin: 79,
     },
     acceptanceTips: '岭南大学是双非背景同学逆袭港校排名的绝佳选择，商科与人文社科接受CET-6（450+）。师生比优越，推荐作为核心稳妥/保底目标。',
@@ -997,6 +1051,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / CET-6 450分 / 托福 79',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬 / 最终轮: 次年4月',
+        officialUrl: 'https://www.ln.edu.hk/econ/mide/',
         curriculumHighlights: ['一带一路与大湾区经济发展实战', '国际贸易政策与跨国投资', '宏观经济与发展金融分析', '全球经济学调研方法'],
         employmentProspects: '大湾区跨国经贸机构、政策研究智库、银行国际业务部'
       },
@@ -1011,6 +1066,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / CET-6 450分 / 托福 79',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.ln.edu.hk/msai_ba/',
         curriculumHighlights: ['AI算法在商业运营中的决策落地', '大数据深度学习与用户画像', '预测分析与供应链智能管理', '商业智能平台开发'],
         employmentProspects: '商业数据分析师、AI应用顾问、零售与电商运营决策专家'
       },
@@ -1025,6 +1081,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / CET-6 450分 / 托福 79',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.ln.edu.hk/fin_act/mfin/',
         curriculumHighlights: ['金融机构风险管理与巴塞尔协议', '投资分析与资产配置', '金融市场与财富管理', '金融科技与衍生证券'],
         employmentProspects: '商业银行客户经理、保险资管分析师、证券公司营业部与投顾'
       },
@@ -1039,6 +1096,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.5 / CET-6 450分 / 托福 79',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月中旬 / Round 2: 次年2月上旬',
+        officialUrl: 'https://www.ln.edu.hk/tran/mats/',
         curriculumHighlights: ['商业与法律双语实战翻译', '同声传译与口译技巧', '文学与影视字幕本地化', '计算机辅助翻译 (CAT) 工具'],
         employmentProspects: '专业翻译公司、外资企业双语秘书、跨国文化传播公司'
       }
@@ -1058,6 +1116,7 @@ export const HK_UNIVERSITIES: University[] = [
     qsRank2025: 800, // QS教育学科位列全球第 21 位
     timesRank2024: 401,
     location: '新界大埔露屏路',
+    websiteUrl: 'https://www.eduhk.hk/acadprog/postgrad/',
     badgeBgColor: 'bg-teal-800',
     accentColor: '#115e59',
     features: ['QS教育学科全球第21位', '香港教师培养与师训摇篮', '心理学/语言学/社科实力出众', '全校绝大多数专业接受英语六级'],
@@ -1073,8 +1132,8 @@ export const HK_UNIVERSITIES: University[] = [
     },
     languageAcceptance: {
       acceptsCET6: true,
-      cet6MinScore: 430, // 极度亲民的六级门槛
-      ieltsMin: 6.0,     // 英语教育 MATESOL 特殊要求 7.0
+      cet6MinScore: 430,
+      ieltsMin: 6.0,
       toeflMin: 80,
     },
     acceptanceTips: '教大的教育学（MATESOL、中文教育、教育领导力等）在两岸三地行业认可度极高，中小学与国际学校就业率极佳。绝大多数专业支持大学英语六级（430+）。',
@@ -1090,6 +1149,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 7.0 (单科不低于 6.5) / 托福 100 (不接受六级)',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬 / 最终轮: 次年3月',
+        officialUrl: 'https://www.eduhk.hk/fehd/en/programmes.php?id=9',
         curriculumHighlights: ['第二语言习得与认知理论', '英语课程大纲设计与教材评估', '语音学与英语教学法实操', '课堂教学反思与观察技能'],
         employmentProspects: '重点公立中小学英语教师、国际学校IB/AP英语名师、教育培训集团教研总监'
       },
@@ -1104,6 +1164,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.0 / CET-6 430分 / 托福 80',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬 / 最终轮: 次年3月',
+        officialUrl: 'https://www.eduhk.hk/fehd/en/programmes.php?id=1',
         curriculumHighlights: ['课程开发与评估理论', '教育心理学与学习差异', '学校管理与教育领导力', '教育大数据与政策调研'],
         employmentProspects: '教育行政与教研管理部门、各级学校骨干教师、国际教育机构顾问'
       },
@@ -1118,6 +1179,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.0 / CET-6 430分 / 托福 80',
         competitivenessLevel: 'medium',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年2月上旬',
+        officialUrl: 'https://www.eduhk.hk/mit/msc_aied/',
         curriculumHighlights: ['AI智能导师系统开发', '教育元宇宙与VR/AR交互教学', '学习分析技术与自适应测评', 'STEM教育创客设计'],
         employmentProspects: '教育科技独角兽产品经理、智慧校园解决方案架构师、智能教辅研发'
       },
@@ -1132,6 +1194,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.0 / CET-6 430分 / 托福 80',
         competitivenessLevel: 'high',
         admissionRounds: 'Round 1: 11月上旬 / Round 2: 次年1月下旬',
+        officialUrl: 'https://www.eduhk.hk/ps/en/programmes/taught-postgraduate-programmes/master-of-social-sciences-in-psychology-schools-and-community-settings',
         curriculumHighlights: ['儿童与青少年发展心理学', '心理健康评估与咨询辅导', '认知神经科学基础', '社区与学校危机干预'],
         employmentProspects: '学校心理咨询师、青少年心理健康中心辅导员、人力资源组织心理顾问'
       }
@@ -1151,6 +1214,7 @@ export const HK_UNIVERSITIES: University[] = [
     qsRank2025: 1000,
     timesRank2024: 601,
     location: '九龙何文田牧爱街',
+    websiteUrl: 'https://www.hkmu.edu.hk/admission/postgraduate/',
     badgeBgColor: 'bg-slate-800',
     accentColor: '#334155',
     features: ['香港第九所公立性质大学', '护理学/创意艺术/商科应用性极强', '录取门槛亲民，保底首选', '中文授课专业丰富'],
@@ -1183,6 +1247,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '中文班无语言硬性要求 / 英文班雅思 6.0 / CET-6 430',
         competitivenessLevel: 'moderate',
         admissionRounds: '全年滚动招生 / 截止至次年5月',
+        officialUrl: 'https://www.hkmu.edu.hk/ba/programmes/postgraduate/',
         curriculumHighlights: ['战略管理决策实操', '大湾区企业商业模式创新', '公司金融与运营实操', '跨国企业营销管理'],
         employmentProspects: '民营企业中高层管理者、家族企业接班人、大湾区跨境贸易创业'
       },
@@ -1197,6 +1262,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '中文授课 (提交文学写作或剧本作品)',
         competitivenessLevel: 'moderate',
         admissionRounds: '第一轮: 12月 / 第二轮: 次年3月',
+        officialUrl: 'https://www.hkmu.edu.hk/as/programmes/postgraduate/',
         curriculumHighlights: ['虚构文学与长篇小说创作技巧', '剧本与影视网剧文案构思', '现代出版与文创产业运营', '作家名师工作坊'],
         employmentProspects: '影视编剧、网络文学作家、文创IP孵化总监、出版社编辑'
       }
@@ -1216,6 +1282,7 @@ export const HK_UNIVERSITIES: University[] = [
     qsRank2025: 1000,
     timesRank2024: 601,
     location: '新界沙田小沥源',
+    websiteUrl: 'https://www.hsu.edu.hk/en/admissions/postgraduate-admissions/',
     badgeBgColor: 'bg-emerald-900',
     accentColor: '#064e3b',
     features: ['恒生银行背景支持', '商科与供应链管理实力出众', '小班博雅教学', '稳妥保底优选'],
@@ -1248,6 +1315,7 @@ export const HK_UNIVERSITIES: University[] = [
         minLanguageRequirement: '雅思 6.0 / CET-6 430分 / 托福 70',
         competitivenessLevel: 'moderate',
         admissionRounds: '第一轮: 12月 / 第二轮: 次年4月',
+        officialUrl: 'https://mscgscm.hsu.edu.hk/',
         curriculumHighlights: ['智能物流与供应链物联网技术', '海运与航空货运航线管理', '绿色可持续低碳供应链', '供应链金融与风险控制'],
         employmentProspects: '国际航运物流巨头、跨境电商采购经理、大型制造企业仓储物流总监'
       }
