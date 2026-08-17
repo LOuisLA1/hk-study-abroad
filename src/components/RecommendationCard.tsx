@@ -177,50 +177,50 @@ export const RecommendationCard: React.FC<CardProps> = ({ result, onSelectUniver
                 className="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm space-y-2"
               >
                 <div className="flex items-start justify-between gap-2">
-                  <div>
-                    <div className="flex items-center space-x-2">
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-wrap items-center gap-1.5">
                       <h5 className="font-bold text-sm text-slate-900">
                         {major.nameZh}
                       </h5>
                       {major.faculty && (
-                        <span className="text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-medium">
+                        <span className="text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-medium truncate max-w-full">
                           {major.faculty}
                         </span>
                       )}
                     </div>
-                    <p className="text-xs text-slate-400 font-medium">
+                    <p className="text-xs text-slate-400 font-medium truncate mt-0.5">
                       {major.nameEn}
                     </p>
                   </div>
-                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full flex-shrink-0 ${
                     major.competitivenessLevel === 'extreme' ? 'bg-red-50 text-red-700 border border-red-200' :
                     major.competitivenessLevel === 'high' ? 'bg-amber-50 text-amber-700 border border-amber-200' :
                     'bg-slate-100 text-slate-700'
                   }`}>
-                    {major.competitivenessLevel === 'extreme' ? '竞争极激烈' : major.competitivenessLevel === 'high' ? '高竞争' : '平稳'}
+                    {major.competitivenessLevel === 'extreme' ? '极卷' : major.competitivenessLevel === 'high' ? '高竞争' : '平稳'}
                   </span>
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs text-slate-600 pt-1">
                   <div className="flex items-center space-x-1">
-                    <DollarSign className="w-3.5 h-3.5 text-amber-600" />
-                    <span>{major.tuitionHKD}</span>
+                    <DollarSign className="w-3.5 h-3.5 text-amber-600 flex-shrink-0" />
+                    <span className="truncate">{major.tuitionHKD}</span>
                   </div>
                   <div className="flex items-center space-x-1">
-                    <Clock className="w-3.5 h-3.5 text-slate-400" />
+                    <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
                     <span>{major.duration}</span>
                   </div>
                   <div className="flex items-center space-x-1 col-span-2 sm:col-span-1">
-                    <Languages className="w-3.5 h-3.5 text-blue-600" />
+                    <Languages className="w-3.5 h-3.5 text-blue-600 flex-shrink-0" />
                     <span className="truncate">{major.minLanguageRequirement}</span>
                   </div>
                 </div>
 
                 {/* 申请轮次 */}
                 {major.admissionRounds && (
-                  <div className="text-[11px] text-amber-800 bg-amber-50/60 px-2.5 py-1 rounded-md border border-amber-100 flex items-center space-x-1">
-                    <span className="font-bold flex-shrink-0">📅 申请轮次：</span>
-                    <span className="truncate">{major.admissionRounds}</span>
+                  <div className="text-[11px] text-amber-800 bg-amber-50/60 px-2.5 py-1 rounded-md border border-amber-100 flex items-start space-x-1 leading-tight">
+                    <span className="font-bold flex-shrink-0">📅 轮次：</span>
+                    <span className="leading-normal">{major.admissionRounds}</span>
                   </div>
                 )}
 
@@ -248,10 +248,10 @@ export const RecommendationCard: React.FC<CardProps> = ({ result, onSelectUniver
                       href={major.officialUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-900 border border-amber-500/30 text-[11px] font-bold transition-colors"
+                      className="w-full sm:w-auto inline-flex items-center justify-center space-x-1.5 px-3 py-1.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-900 border border-amber-500/30 text-[11px] font-bold transition-colors text-center"
                     >
-                      <span>🔗 查看官方项目主页与网申简章</span>
-                      <ExternalLink className="w-3 h-3 text-amber-700" />
+                      <span>🔗 官方项目主页与网申简章</span>
+                      <ExternalLink className="w-3 h-3 text-amber-700 flex-shrink-0" />
                     </a>
                   </div>
                 )}

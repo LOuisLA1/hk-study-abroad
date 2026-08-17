@@ -133,45 +133,45 @@ export const EvaluationForm: React.FC<FormProps> = ({ onSubmit, isLoading }) => 
   const gpaLimit = getGpaLimits();
 
   return (
-    <div className="bg-white rounded-2xl shadow-xl border border-slate-200/80 overflow-hidden">
+    <div className="bg-white rounded-2xl sm:rounded-3xl shadow-xl border border-slate-200/80 overflow-hidden">
       
       {/* 表单头部 */}
-      <div className="bg-gradient-to-r from-slate-900 to-hk-navy p-6 sm:p-8 text-white relative">
+      <div className="bg-gradient-to-r from-slate-900 to-hk-navy p-5 sm:p-8 text-white relative">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-semibold mb-2">
               <Sparkles className="w-3.5 h-3.5" />
               <span>AI 多维精准选校引擎</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold font-serif tracking-tight text-white">
+            <h2 className="text-xl sm:text-3xl font-bold font-serif tracking-tight text-white">
               输入您的背景信息
             </h2>
-            <p className="text-slate-300 text-sm mt-1">
+            <p className="text-slate-300 text-xs sm:text-sm mt-1">
               只需提供学校和 GPA，算法将结合最新港校招录数据库测算录取几率
             </p>
           </div>
 
           {/* 快速体验预设 */}
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs text-slate-400">快速填入示例：</span>
+          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 pt-2 sm:pt-0 border-t border-slate-800 sm:border-0">
+            <span className="text-[11px] sm:text-xs text-slate-400 w-full sm:w-auto">快速填入示例：</span>
             <button
               type="button"
               onClick={() => applyPreset('top985')}
-              className="text-xs bg-slate-800 hover:bg-slate-700 text-amber-300 px-2.5 py-1.5 rounded-lg border border-slate-700 transition-colors"
+              className="text-[11px] sm:text-xs bg-slate-800 hover:bg-slate-700 text-amber-300 px-2.5 py-1.5 rounded-lg border border-slate-700 transition-colors"
             >
               985高分 (清北/浙大)
             </button>
             <button
               type="button"
               onClick={() => applyPreset('mid211')}
-              className="text-xs bg-slate-800 hover:bg-slate-700 text-sky-300 px-2.5 py-1.5 rounded-lg border border-slate-700 transition-colors"
+              className="text-[11px] sm:text-xs bg-slate-800 hover:bg-slate-700 text-sky-300 px-2.5 py-1.5 rounded-lg border border-slate-700 transition-colors"
             >
               211商科 (均分84)
             </button>
             <button
               type="button"
               onClick={() => applyPreset('strongDual')}
-              className="text-xs bg-slate-800 hover:bg-slate-700 text-emerald-300 px-2.5 py-1.5 rounded-lg border border-slate-700 transition-colors"
+              className="text-[11px] sm:text-xs bg-slate-800 hover:bg-slate-700 text-emerald-300 px-2.5 py-1.5 rounded-lg border border-slate-700 transition-colors"
             >
               双非逆袭 (深大/六级)
             </button>
@@ -180,7 +180,7 @@ export const EvaluationForm: React.FC<FormProps> = ({ onSubmit, isLoading }) => 
       </div>
 
       {/* 表单内容 */}
-      <form onSubmit={handleSubmit} className="p-6 sm:p-8 space-y-8">
+      <form onSubmit={handleSubmit} className="p-4 sm:p-8 space-y-6 sm:space-y-8">
         
         {/* 第一部分：院校与背景 */}
         <div>

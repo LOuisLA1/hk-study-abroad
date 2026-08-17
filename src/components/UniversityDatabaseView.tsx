@@ -240,10 +240,10 @@ export const UniversityDatabaseView: React.FC = () => {
                           href={m.officialUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center space-x-1 text-[11px] font-bold text-amber-800 hover:text-amber-950 bg-white hover:bg-amber-50 px-2.5 py-1 rounded border border-slate-200 shadow-2xs transition-colors"
+                          className="w-full sm:w-auto inline-flex items-center justify-center space-x-1 text-[11px] font-bold text-amber-800 hover:text-amber-950 bg-white hover:bg-amber-50 px-2.5 py-1 rounded border border-slate-200 shadow-2xs transition-colors text-center"
                         >
                           <span>🔗 官方项目主页与网申简章</span>
-                          <ExternalLink className="w-3 h-3 text-amber-600" />
+                          <ExternalLink className="w-3 h-3 text-amber-600 flex-shrink-0" />
                         </a>
                       </div>
                     )}

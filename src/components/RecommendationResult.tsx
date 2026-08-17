@@ -48,77 +48,77 @@ export const RecommendationResult: React.FC<ResultProps> = ({ report, onReset, o
   };
 
   return (
-    <div className="space-y-8 animate-fadeIn">
+    <div className="space-y-6 sm:space-y-8 animate-fadeIn">
       
       {/* 顶部操作条 */}
-      <div className="flex flex-wrap items-center justify-between gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 bg-white p-3.5 sm:p-4 rounded-2xl border border-slate-200 shadow-sm">
         <button
           onClick={onReset}
-          className="inline-flex items-center space-x-2 text-sm font-semibold text-slate-700 hover:text-amber-600 transition-colors"
+          className="inline-flex items-center justify-center space-x-2 text-xs sm:text-sm font-semibold text-slate-700 hover:text-amber-600 transition-colors py-1.5"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>修改背景条件重新评估</span>
         </button>
 
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 w-full sm:w-auto">
           <button
             onClick={handleCopySummary}
-            className="inline-flex items-center space-x-1.5 px-3 py-2 text-xs font-semibold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 transition-colors"
+            className="flex-1 sm:flex-initial inline-flex items-center justify-center space-x-1.5 px-3 py-2 text-xs font-semibold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 transition-colors"
           >
             {copied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Share2 className="w-3.5 h-3.5" />}
-            <span>{copied ? '已复制推荐方案' : '复制选校摘要'}</span>
+            <span>{copied ? '已复制' : '复制摘要'}</span>
           </button>
 
           <button
             onClick={onOpenExport}
-            className="inline-flex items-center space-x-1.5 px-4 py-2 text-xs font-bold rounded-xl bg-slate-900 hover:bg-slate-800 text-white shadow-md transition-colors"
+            className="flex-1 sm:flex-initial inline-flex items-center justify-center space-x-1.5 px-3.5 sm:px-4 py-2 text-xs font-bold rounded-xl bg-slate-900 hover:bg-slate-800 text-white shadow-md transition-colors"
           >
             <Download className="w-3.5 h-3.5 text-amber-400" />
-            <span>导出精美选校报告 (PDF/打印)</span>
+            <span>导出报告 (PDF)</span>
           </button>
         </div>
       </div>
 
       {/* 学生综合竞争力画像看板 */}
-      <div className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
-        <div className="bg-gradient-to-r from-slate-900 via-hk-navy to-slate-900 p-6 sm:p-8 text-white">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+      <div className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
+        <div className="bg-gradient-to-r from-slate-900 via-hk-navy to-slate-900 p-4 sm:p-8 text-white">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 items-center">
             
             {/* 左侧：得分与画像 */}
-            <div className="lg:col-span-2 space-y-4">
+            <div className="lg:col-span-2 space-y-3 sm:space-y-4">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-semibold">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>评估结果已生成</span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl font-extrabold font-serif">
-                {profile.schoolName} 学员 · 香港升学竞争力评估
+              <h2 className="text-xl sm:text-3xl font-extrabold font-serif">
+                {profile.schoolName} · 升学竞争力评估
               </h2>
 
               {/* 学生基础标签 */}
-              <div className="flex flex-wrap gap-2 pt-1">
-                <span className="bg-slate-800/90 text-slate-200 px-3 py-1 rounded-lg text-xs font-medium border border-slate-700">
+              <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-1">
+                <span className="bg-slate-800/90 text-slate-200 px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium border border-slate-700">
                   🏫 {schoolMeta?.label}
                 </span>
-                <span className="bg-slate-800/90 text-amber-300 px-3 py-1 rounded-lg text-xs font-bold border border-slate-700">
-                  📊 GPA: {profile.gpa} / {profile.gpaScale} (折合 {profile.normalizedGPA100} 分)
+                <span className="bg-slate-800/90 text-amber-300 px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-bold border border-slate-700">
+                  📊 GPA: {profile.gpa}/{profile.gpaScale} ({profile.normalizedGPA100}分)
                 </span>
-                <span className="bg-slate-800/90 text-sky-300 px-3 py-1 rounded-lg text-xs font-medium border border-slate-700">
+                <span className="bg-slate-800/90 text-sky-300 px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium border border-slate-700">
                   🗣️ {profile.languageType === 'none' ? '语言备考中' : `${profile.languageType.toUpperCase()}: ${profile.languageScore}`}
                 </span>
-                <span className="bg-slate-800/90 text-emerald-300 px-3 py-1 rounded-lg text-xs font-medium border border-slate-700">
-                  💼 实习 {profile.internshipCount} 段 · 科研 {profile.researchCount} 项
+                <span className="bg-slate-800/90 text-emerald-300 px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium border border-slate-700">
+                  💼 实习{profile.internshipCount}段 · 科研{profile.researchCount}项
                 </span>
               </div>
 
               {/* 分数条 */}
               <div className="pt-2">
-                <div className="flex items-baseline space-x-2">
-                  <span className="text-4xl sm:text-5xl font-black text-amber-400 font-serif">
+                <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+                  <span className="text-3xl sm:text-5xl font-black text-amber-400 font-serif">
                     {overallScore}
                   </span>
-                  <span className="text-slate-400 text-sm font-semibold">/ 100 综合竞争力指数</span>
-                  <span className="text-xs px-2.5 py-0.5 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/30 font-bold ml-2">
+                  <span className="text-slate-400 text-xs sm:text-sm font-semibold">/ 100 综合竞争力指数</span>
+                  <span className="text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/30 font-bold">
                     {overallScore >= 88 ? '卓越 (港前三有力冲击者)' : overallScore >= 80 ? '优秀 (港前五核心主力)' : '良好 (港八校稳扎稳打)'}
                   </span>
                 </div>
@@ -127,8 +127,8 @@ export const RecommendationResult: React.FC<ResultProps> = ({ report, onReset, o
             </div>
 
             {/* 右侧：五维能力雷达图 */}
-            <div className="bg-slate-800/50 backdrop-blur-sm p-4 rounded-2xl border border-slate-700/60 flex flex-col items-center justify-center">
-              <span className="text-xs font-bold text-slate-300 mb-1">
+            <div className="bg-slate-800/50 backdrop-blur-sm p-3 sm:p-4 rounded-2xl border border-slate-700/60 flex flex-col items-center justify-center">
+              <span className="text-[11px] sm:text-xs font-bold text-slate-300 mb-1">
                 多维背景实力雷达分布
               </span>
               <ProfileRadar dimensions={radarDimensions} />
@@ -138,43 +138,43 @@ export const RecommendationResult: React.FC<ResultProps> = ({ report, onReset, o
         </div>
 
         {/* 梯度数量统计条 */}
-        <div className="bg-slate-50 border-t border-slate-200 px-6 py-4 grid grid-cols-3 divide-x divide-slate-200 text-center">
+        <div className="bg-slate-50 border-t border-slate-200 px-2 sm:px-6 py-3 sm:py-4 grid grid-cols-3 divide-x divide-slate-200 text-center select-none">
           <div 
             onClick={() => setActiveTierFilter(activeTierFilter === 'reach' ? 'all' : 'reach')}
-            className="cursor-pointer hover:bg-slate-100/80 p-2 rounded-xl transition-colors"
+            className="cursor-pointer hover:bg-slate-100/80 p-1.5 sm:p-2 rounded-xl transition-colors"
           >
-            <div className="text-xs text-slate-500 font-semibold flex items-center justify-center space-x-1">
-              <Rocket className="w-3.5 h-3.5 text-purple-600" />
-              <span>冲刺档院校</span>
+            <div className="text-[11px] sm:text-xs text-slate-500 font-semibold flex items-center justify-center space-x-1">
+              <Rocket className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-purple-600 flex-shrink-0" />
+              <span>冲刺档</span>
             </div>
-            <div className="text-2xl font-black text-purple-700 mt-0.5">
-              {reachList.length} <span className="text-xs font-normal text-slate-400">所</span>
+            <div className="text-lg sm:text-2xl font-black text-purple-700 mt-0.5">
+              {reachList.length} <span className="text-[10px] sm:text-xs font-normal text-slate-400">所</span>
             </div>
           </div>
 
           <div 
             onClick={() => setActiveTierFilter(activeTierFilter === 'match' ? 'all' : 'match')}
-            className="cursor-pointer hover:bg-slate-100/80 p-2 rounded-xl transition-colors"
+            className="cursor-pointer hover:bg-slate-100/80 p-1.5 sm:p-2 rounded-xl transition-colors"
           >
-            <div className="text-xs text-slate-500 font-semibold flex items-center justify-center space-x-1">
-              <Target className="w-3.5 h-3.5 text-blue-600" />
-              <span>核心匹配院校</span>
+            <div className="text-[11px] sm:text-xs text-slate-500 font-semibold flex items-center justify-center space-x-1">
+              <Target className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-blue-600 flex-shrink-0" />
+              <span>核心匹配</span>
             </div>
-            <div className="text-2xl font-black text-blue-700 mt-0.5">
-              {matchList.length} <span className="text-xs font-normal text-slate-400">所</span>
+            <div className="text-lg sm:text-2xl font-black text-blue-700 mt-0.5">
+              {matchList.length} <span className="text-[10px] sm:text-xs font-normal text-slate-400">所</span>
             </div>
           </div>
 
           <div 
             onClick={() => setActiveTierFilter(activeTierFilter === 'safety' ? 'all' : 'safety')}
-            className="cursor-pointer hover:bg-slate-100/80 p-2 rounded-xl transition-colors"
+            className="cursor-pointer hover:bg-slate-100/80 p-1.5 sm:p-2 rounded-xl transition-colors"
           >
-            <div className="text-xs text-slate-500 font-semibold flex items-center justify-center space-x-1">
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-              <span>稳妥保底院校</span>
+            <div className="text-[11px] sm:text-xs text-slate-500 font-semibold flex items-center justify-center space-x-1">
+              <ShieldCheck className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-emerald-600 flex-shrink-0" />
+              <span>稳妥保底</span>
             </div>
-            <div className="text-2xl font-black text-emerald-700 mt-0.5">
-              {safetyList.length} <span className="text-xs font-normal text-slate-400">所</span>
+            <div className="text-lg sm:text-2xl font-black text-emerald-700 mt-0.5">
+              {safetyList.length} <span className="text-[10px] sm:text-xs font-normal text-slate-400">所</span>
             </div>
           </div>
         </div>

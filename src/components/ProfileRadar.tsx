@@ -11,9 +11,9 @@ interface RadarProps {
 }
 
 export const ProfileRadar: React.FC<RadarProps> = ({ dimensions }) => {
-  const size = 260;
+  const size = 280;
   const center = size / 2;
-  const radius = 95;
+  const radius = 90;
 
   const axes = [
     { label: '学术均分 (GPA)', value: dimensions.academic },
@@ -47,8 +47,8 @@ export const ProfileRadar: React.FC<RadarProps> = ({ dimensions }) => {
     .join(' ');
 
   return (
-    <div className="flex flex-col items-center justify-center p-2">
-      <svg width={size} height={size} className="overflow-visible">
+    <div className="flex flex-col items-center justify-center p-1 w-full max-w-[270px] mx-auto">
+      <svg viewBox={`0 0 ${size} ${size}`} className="w-full h-auto overflow-visible">
         {/* 背景网格多边形 */}
         {levels.map((level, levelIdx) => {
           const gridPoints = axes

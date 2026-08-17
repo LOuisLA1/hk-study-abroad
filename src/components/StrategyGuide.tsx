@@ -16,38 +16,38 @@ export const StrategyGuide: React.FC = () => {
     <div className="space-y-8 animate-fadeIn max-w-5xl mx-auto">
       
       {/* 头部 Banner */}
-      <div className="bg-gradient-to-r from-slate-900 via-hk-navy to-slate-900 rounded-3xl p-6 sm:p-8 text-white shadow-xl">
+      <div className="bg-gradient-to-r from-slate-900 via-hk-navy to-slate-900 rounded-2xl sm:rounded-3xl p-5 sm:p-8 text-white shadow-xl">
         <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-semibold mb-3">
           <Compass className="w-3.5 h-3.5" />
-          <span>2025/2026 香港留学官方申请全景通关指南</span>
+          <span>2026/2027 香港留学官方申请全景通关指南</span>
         </div>
-        <h2 className="text-2xl sm:text-3xl font-extrabold font-serif">
+        <h2 className="text-xl sm:text-3xl font-extrabold font-serif">
           香港授课型硕士 (Taught Master) 申请策略与时间线
         </h2>
-        <p className="text-slate-300 text-sm mt-2 max-w-3xl leading-relaxed">
+        <p className="text-slate-300 text-xs sm:text-sm mt-2 max-w-3xl leading-relaxed">
           香港高校采用英美联审机制与 Rolling（滚动录取，先到先审）制，名额有限，录满即止。掌握科学的投递节奏与文书定位是收获梦校 Offer 的关键。
         </p>
       </div>
 
       {/* 核心时间线 (Timeline) */}
-      <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
-        <div className="flex items-center space-x-3">
-          <Calendar className="w-6 h-6 text-amber-600" />
-          <h3 className="text-xl font-bold font-serif text-slate-900">
+      <div className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+        <div className="flex items-center space-x-2.5">
+          <Calendar className="w-5 h-5 sm:w-6 sm:h-6 text-amber-600 flex-shrink-0" />
+          <h3 className="text-lg sm:text-xl font-bold font-serif text-slate-900">
             香港硕士标准申请时间规划表 (Timeline)
           </h3>
         </div>
 
-        <div className="relative border-l-2 border-amber-400 ml-4 pl-6 space-y-8">
+        <div className="relative border-l-2 border-amber-400 ml-2 sm:ml-4 pl-4 sm:pl-6 space-y-6 sm:space-y-8">
           
           {/* 阶段 1 */}
           <div className="relative">
-            <div className="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-amber-500 border-4 border-white shadow-md" />
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
-              <span className="text-xs font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800">
+            <div className="absolute -left-[23px] sm:-left-[31px] top-0 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-amber-500 border-4 border-white shadow-md" />
+            <div className="bg-slate-50 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-slate-200">
+              <span className="text-[11px] sm:text-xs font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800">
                 当年 3 月 - 8 月 · 背景筑基期
               </span>
-              <h4 className="text-base font-bold text-slate-900 mt-2">
+              <h4 className="text-sm sm:text-base font-bold text-slate-900 mt-2">
                 GPA 冲刺、语言考分与文书初稿准备
               </h4>
               <ul className="mt-2 space-y-1 text-xs text-slate-600">
@@ -60,12 +60,12 @@ export const StrategyGuide: React.FC = () => {
 
           {/* 阶段 2 */}
           <div className="relative">
-            <div className="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-amber-600 border-4 border-white shadow-md" />
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
-              <span className="text-xs font-bold px-2 py-0.5 rounded bg-purple-100 text-purple-800">
+            <div className="absolute -left-[23px] sm:-left-[31px] top-0 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-amber-600 border-4 border-white shadow-md" />
+            <div className="bg-slate-50 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-slate-200">
+              <span className="text-[11px] sm:text-xs font-bold px-2 py-0.5 rounded bg-purple-100 text-purple-800">
                 当年 9 月 - 11 月 · 黄金早鸟申请期 (Round 1)
               </span>
-              <h4 className="text-base font-bold text-slate-900 mt-2">
+              <h4 className="text-sm sm:text-base font-bold text-slate-900 mt-2">
                 港校申请系统集中开放，第一轮火速递交
               </h4>
               <ul className="mt-2 space-y-1 text-xs text-slate-600">
@@ -78,12 +78,12 @@ export const StrategyGuide: React.FC = () => {
 
           {/* 阶段 3 */}
           <div className="relative">
-            <div className="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-amber-500 border-4 border-white shadow-md" />
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
-              <span className="text-xs font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-800">
+            <div className="absolute -left-[23px] sm:-left-[31px] top-0 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-amber-500 border-4 border-white shadow-md" />
+            <div className="bg-slate-50 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-slate-200">
+              <span className="text-[11px] sm:text-xs font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-800">
                 当年 12 月 - 次年 3 月 · 常规录取与第二轮投递
               </span>
-              <h4 className="text-base font-bold text-slate-900 mt-2">
+              <h4 className="text-sm sm:text-base font-bold text-slate-900 mt-2">
                 首批 Offer 雨降临，缴纳留位费 (Deposit)
               </h4>
               <ul className="mt-2 space-y-1 text-xs text-slate-600">
@@ -95,12 +95,12 @@ export const StrategyGuide: React.FC = () => {
 
           {/* 阶段 4 */}
           <div className="relative">
-            <div className="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-emerald-500 border-4 border-white shadow-md" />
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
-              <span className="text-xs font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
+            <div className="absolute -left-[23px] sm:-left-[31px] top-0 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-emerald-500 border-4 border-white shadow-md" />
+            <div className="bg-slate-50 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-slate-200">
+              <span className="text-[11px] sm:text-xs font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
                 次年 4 月 - 8 月 · 签证办理与行前准备
               </span>
-              <h4 className="text-base font-bold text-slate-900 mt-2">
+              <h4 className="text-sm sm:text-base font-bold text-slate-900 mt-2">
                 办理学生签证 (Student Visa)、租房与行前体检
               </h4>
               <ul className="mt-2 space-y-1 text-xs text-slate-600">
