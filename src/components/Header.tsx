@@ -25,7 +25,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
                   港校升学通
                 </span>
                 <span className="text-xs bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-full font-medium">
-                  2025/2026 最新版
+                  2026/2027 招生季
                 </span>
               </div>
               <p className="text-xs text-slate-400 hidden sm:block">

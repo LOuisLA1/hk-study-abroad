@@ -41,11 +41,15 @@ export interface UniversityMajor {
   nameZh: string;
   nameEn: string;
   category: MajorCategory;
+  faculty?: string; // 所属学院
   tuitionHKD: string;
   duration: string; // 如 "1 年全日制"
   minLanguageRequirement: string; // 如 "雅思 6.5 (单科不低于 6.0)"
   competitivenessLevel: 'extreme' | 'high' | 'medium' | 'moderate'; // 竞争烈度
+  admissionRounds?: string; // 申请轮次说明
   curriculumHighlights: string[];
+  employmentProspects?: string; // 就业去向方向
+  officialUrl?: string; // 官方项目主页与网申入口链接
 }
 
 export interface University {
@@ -58,6 +62,7 @@ export interface University {
   qsRank2025: number;
   timesRank2024: number;
   location: string;
+  websiteUrl?: string; // 大学官方主页与研究生院链接
   badgeBgColor: string;
   accentColor: string;
   features: string[];

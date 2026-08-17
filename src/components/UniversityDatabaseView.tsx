@@ -196,16 +196,42 @@ export const UniversityDatabaseView: React.FC = () => {
               <span className="text-xs font-bold text-slate-900 block mb-2">
                 核心代表专业 ({uni.majors.length})：
               </span>
-              <div className="space-y-2">
+              <div className="space-y-2.5">
                 {uni.majors.map(m => (
-                  <div key={m.id} className="p-2.5 rounded-lg border border-slate-100 bg-white shadow-2xs flex items-center justify-between text-xs">
-                    <div>
-                      <span className="font-semibold text-slate-800 block">{m.nameZh}</span>
-                      <span className="text-[10px] text-slate-400">{m.tuitionHKD} · {m.duration}</span>
+                  <div key={m.id} className="p-3 rounded-xl border border-slate-100 bg-slate-50/60 hover:bg-slate-50 transition-colors shadow-2xs space-y-1.5 text-xs">
+                    <div className="flex items-start justify-between gap-2">
+                      <div>
+                        <div className="flex items-center space-x-1.5">
+                          <span className="font-bold text-slate-900">{m.nameZh}</span>
+                          {m.faculty && (
+                            <span className="text-[10px] bg-slate-200/70 text-slate-700 px-1.5 py-0.5 rounded font-medium">
+                              {m.faculty}
+                            </span>
+                          )}
+                        </div>
+                        <span className="text-[11px] text-slate-400 block">{m.nameEn}</span>
+                      </div>
+                      <span className="text-[10px] text-amber-800 bg-amber-50 px-2 py-0.5 rounded font-bold border border-amber-200/60 flex-shrink-0">
+                        {m.tuitionHKD}
+                      </span>
                     </div>
-                    <span className="text-[10px] text-amber-700 bg-amber-50 px-2 py-0.5 rounded font-medium">
-                      {m.minLanguageRequirement}
-                    </span>
+
+                    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-slate-500">
+                      <div className="flex items-center space-x-1">
+                        <Clock className="w-3 h-3 text-slate-400" />
+                        <span>{m.duration}</span>
+                      </div>
+                      <div className="flex items-center space-x-1">
+                        <Languages className="w-3 h-3 text-blue-500" />
+                        <span>{m.minLanguageRequirement}</span>
+                      </div>
+                    </div>
+
+                    {m.admissionRounds && (
+                      <div className="text-[10px] text-slate-600 bg-white p-1.5 rounded border border-slate-200/70">
+                        <strong className="text-amber-800">申请轮次：</strong>{m.admissionRounds}
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>

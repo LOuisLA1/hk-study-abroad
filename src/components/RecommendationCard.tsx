@@ -178,9 +178,16 @@ export const RecommendationCard: React.FC<CardProps> = ({ result, onSelectUniver
               >
                 <div className="flex items-start justify-between gap-2">
                   <div>
-                    <h5 className="font-bold text-sm text-slate-900">
-                      {major.nameZh}
-                    </h5>
+                    <div className="flex items-center space-x-2">
+                      <h5 className="font-bold text-sm text-slate-900">
+                        {major.nameZh}
+                      </h5>
+                      {major.faculty && (
+                        <span className="text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-medium">
+                          {major.faculty}
+                        </span>
+                      )}
+                    </div>
                     <p className="text-xs text-slate-400 font-medium">
                       {major.nameEn}
                     </p>
@@ -209,14 +216,30 @@ export const RecommendationCard: React.FC<CardProps> = ({ result, onSelectUniver
                   </div>
                 </div>
 
+                {/* 申请轮次 */}
+                {major.admissionRounds && (
+                  <div className="text-[11px] text-amber-800 bg-amber-50/60 px-2.5 py-1 rounded-md border border-amber-100 flex items-center space-x-1">
+                    <span className="font-bold flex-shrink-0">📅 申请轮次：</span>
+                    <span className="truncate">{major.admissionRounds}</span>
+                  </div>
+                )}
+
                 {/* 课程亮点 */}
-                <div className="flex flex-wrap gap-1 pt-1">
+                <div className="flex flex-wrap gap-1 pt-0.5">
                   {major.curriculumHighlights.map((hl, idx) => (
                     <span key={idx} className="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">
                       {hl}
                     </span>
                   ))}
                 </div>
+
+                {/* 就业去向 */}
+                {major.employmentProspects && (
+                  <div className="text-[10px] text-slate-500 pt-1 border-t border-slate-100">
+                    <span className="font-bold text-slate-700">💼 就业前景：</span>
+                    {major.employmentProspects}
+                  </div>
+                )}
               </div>
             ))}
           </div>

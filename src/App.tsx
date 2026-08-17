@@ -94,7 +94,7 @@ export function App() {
             <span className="font-bold font-serif text-white">港校升学通 · HK Study Abroad Recommender</span>
           </div>
           <div className="flex items-center space-x-4 text-slate-400">
-            <span>数据基准：2025/2026 QS / 港校官方录取统计</span>
+            <span>数据基准：2026/2027 港校官方研究生院录取统计</span>
             <span>·</span>
             <span>隐私保护：所有数据均在本地安全计算</span>
           </div>
